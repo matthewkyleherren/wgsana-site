@@ -27025,8 +27025,8 @@ all and (max-width:1024px) and (orientation:portrait) {
 }
 
 .masterworks__hero .mask .bg {
-    background-color: #ec1c24;
-    background-color: var(--bg-main);
+    background-color: color(srgb 0.925 0.11 0.141 / 0.819);
+    
     bottom: 0;
     height: 100%;
     left: 0;
@@ -27039,13 +27039,13 @@ all and (max-width:1024px) and (orientation:portrait) {
 
 @media (max-width:900px) and (orientation:landscape) {
     .masterworks__hero .mask .bg {
-        background-color: rgba(0, 0, 0, .5)
+        background-color: color(srgb 0.925 0.11 0.141 / 0.719);
     }
 }
 
 @media (max-width:1024px) and (orientation:portrait) {
     .masterworks__hero .mask .bg {
-        background-color: rgba(0, 0, 0, .5)
+        background-color: color(srgb 0.925 0.11 0.141 / 0.719);
     }
 }
 
@@ -27054,14 +27054,15 @@ all and (max-width:1024px) and (orientation:portrait) {
     color: var(--color-white);
     left: 50%;
     position: absolute;
-    top: 10vw;
-    transform: translateX(-50%) translateY(-50%)
+    top: 30vh;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 4rem;
 }
 
 @media (max-width:900px) and (orientation:landscape) {
     .masterworks__hero .mask .label {
-        top: 33.33333vw;
-        top: calc(var(--mobile-size)*2);
+        top: 33.33333vh;
+        font-size: 3rem;
         width: 100vw;
         width: calc(var(--mobile-size)*6)
     }
@@ -27071,7 +27072,8 @@ all and (max-width:1024px) and (orientation:portrait) {
     .masterworks__hero .mask .label {
         top: 50vw;
         top: calc(var(--mobile-size)*3);
-        width: 100%
+        width: 100%;
+        font-size: 3rem;
     }
 }
 
