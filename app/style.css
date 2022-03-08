@@ -20890,7 +20890,7 @@ all and (max-width:1024px) and (orientation:portrait) {
     header {
         background-color: #ec1c24;
         background-color: var(--bg-main);
-        height: 70px;
+        height: 50px;
         left: 0;
         top: 0;
         z-index: 15
@@ -20926,9 +20926,10 @@ header .logo {
 @media (max-width:900px) and (orientation:landscape),
 all and (max-width:1024px) and (orientation:portrait) {
     header .logo {
-        height: 50px;
+        height: 75px;
         margin-top: 0px;
-        top: 10px
+        top: -13px;
+        left: -35px;
     }
 }
 
@@ -20985,7 +20986,7 @@ header nav.menu {
         padding: 16.66667vw 8.33333vw;
         padding: calc(var(--mobile-size)) calc(var(--mobile-size)/2);
         pointer-events: all;
-        top: 70px;
+        top: 50px;
        
         transform: translateX(-50%) translateY(-100%);
         width: 100vw
@@ -21285,10 +21286,11 @@ header .trigger {
 all and (max-width:1024px) and (orientation:portrait) {
     header .trigger {
         color: #fff;
-        color: var(--color-white);
-        height: 50px;
-        margin-top: 0px;
-        top: 10px;
+       color: var(--color-white);
+       height: 40px;
+       margin-top: 0px;
+       top: 5px;
+       right: -15px;
         
     }
 }
@@ -21333,8 +21335,8 @@ all and (max-width:1024px) and (orientation:portrait) {
 }
 
 header .trigger .text span {
-    color: #1b1b1f;
-    color: var(--color-black);
+    color: #ec1c24;
+    color: #ec1c24;
     display: block;
     position: relative;
     will-change: transform
@@ -22579,24 +22581,26 @@ all and (max-width:900px) and (orientation:landscape) {
 
 .home__hero {
     padding-bottom: 5vw;
-    padding-top: 40vw
+    padding-top: 40vw;
+    background: url(https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&h=1280&q=80);
+    background-size: cover;
 }
 
 @media (max-width:900px) and (orientation:landscape) {
     .home__hero {
         padding-bottom: 8.33333vw;
-        padding-bottom: calc(var(--mobile-size)/2);
+        padding-bottom: calc(var(--mobile-size)*2);
         padding-top: 33.33333vw;
-        padding-top: calc(var(--mobile-size)*2)
+        padding-top: calc(var(--mobile-size)/2)
     }
 }
 
 @media (max-width:1024px) and (orientation:portrait) {
     .home__hero {
         padding-bottom: 8.33333vw;
-        padding-bottom: calc(var(--mobile-size)/2);
+        padding-bottom: calc(var(--mobile-size)*4);
         padding-top: 66.66667vw;
-        padding-top: calc(var(--mobile-size)*4)
+        padding-top: calc(var(--mobile-size)/2)
     }
 }
 
@@ -22921,15 +22925,12 @@ all and (max-width:1024px) and (orientation:portrait) {
     }
 }
 
-@media (max-width:900px) and (orientation:landscape) {
-    .home__gallery .info--1 {
-        margin: 0 0 16.66667vw;
-        margin-bottom: calc(var(--mobile-size)*1);
-        padding-left: 116.66667vw;
-        padding-left: calc(var(--mobile-size)*7);
-        padding-top: 16.66667vw;
-        padding-top: calc(var(--mobile-size)*1);
-        width: auto
+
+@media (max-width:900px) and (orientation:landscape),
+all and (max-width:1024px) and (orientation:portrait) {
+   .home__gallery .title .line {
+        text-align: right;
+    }
     }
 
     .home__gallery .info--1 .title {
@@ -22995,10 +22996,25 @@ all and (max-width:1024px) and (orientation:portrait) {
     margin-bottom: 2vw
 }
 
+
+@media (max-width:900px) and (orientation:landscape),
+all and (max-width:1024px) and (orientation:portrait) {
+.home__gallery .info .title {
+margin-bottom: 6vw;
+text-align: end;
+margin-left: 20vw;
+width: 60vw;
+margin-right: 10vw;
+}
+}
+
+
+
 @media (max-width:1024px) and (orientation:portrait) {
     .home__gallery .info .link {
         margin-bottom: 11.11111vw;
-        margin-bottom: calc(var(--mobile-size)/1.5)
+        margin-bottom: calc(var(--mobile-size)/1.5);
+        float: inline-end;
     }
 }
 
@@ -28631,6 +28647,19 @@ all and (max-width:1024px) and (orientation:portrait) {
     will-change: transform
 }
 
+@media (max-width:900px) and (orientation:landscape),
+all and (max-width:1024px) and (orientation:portrait) {
+    .page__hero .image,
+    .page__hero .image img {
+will-change: transform;
+margin: 10vw;
+width: 80vw;
+/* left: -10vw !important; */
+top: 70px !important;
+margin-top: 0px !important;
+height: calc(100vh - 30vw);
+}
+}
 .page__hero .image:before {
     height: calc(100vh - 13vw)
 }
@@ -28638,8 +28667,11 @@ all and (max-width:1024px) and (orientation:portrait) {
 @media (max-width:900px) and (orientation:landscape),
 all and (max-width:1024px) and (orientation:portrait) {
     .page__hero .image:before {
-        height: 100vh;
-        height: calc(var(--vh, 1vh)*100)
+        
+        height: calc(var(--vh, 1vh)*100);
+        height: calc(100vh - 5vw - 50px);
+        margin: 5vw;
+        
     }
 }
 
@@ -28697,13 +28729,30 @@ all and (max-width:1024px) and (orientation:portrait) {
 
 @media (max-width:900px) and (orientation:landscape) {
     .page__hero .mask .bg {
-        background-color: rgba(0, 0, 0, 0)
+        background-color: rgba(0, 0, 0, 0);
+       
+        height: 20vh;
+        left: 0;
+        position: relative;
+        top: 80vh;
+        transform-origin: 50% 0;
+        /* width: 100%; */
+        will-change: transform;
     }
 }
 
 @media (max-width:1024px) and (orientation:portrait) {
     .page__hero .mask .bg {
-        background-color: rgba(0, 0, 0, .0)
+        background-color: rgba(0, 0, 0, .0);
+        /* background-color: #ec1c24; */
+        /* background-color: var(--bg-main); */
+        height: 20vh;
+        left: 0;
+        position: relative;
+        top: 80vh;
+        transform-origin: 50% 0;
+        /* width: 100%; */
+        will-change: transform;
     }
 }
 
@@ -28877,4 +28926,21 @@ all and (max-width:1024px) and (orientation:portrait) {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 2px
+}
+
+@media (max-width:900px) and (orientation:landscape),
+all and (max-width:1024px) and (orientation:portrait) {
+    .page__hero .image,
+    .page__hero .image img {
+will-change: transform;
+margin: 10vw;
+width: 90vw;
+/* left: -10vw !important; */
+top: 60px !important;
+margin-top: 0px !important;
+height: calc(100vh - 19vw);
+margin-bottom: 0px !important;
+bottom: 0px !important;
+margin-left: 3vw !important;
+}
 }
