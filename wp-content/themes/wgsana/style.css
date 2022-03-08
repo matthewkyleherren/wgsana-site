@@ -18293,7 +18293,8 @@ all and (max-width:1024px) and (orientation:portrait) {
 }
 
 #app>div>.infotrigger {
-    
+    color: #ec1c24;
+    color: var(--color-main);
     cursor: pointer;
     font-size: .7rem;
     font-weight: 600;
@@ -18301,17 +18302,12 @@ all and (max-width:1024px) and (orientation:portrait) {
     line-height: 2;
     opacity: .0001;
     position: fixed;
+    right: 2.5vw;
     text-transform: uppercase;
     top: 50%;
     transform: rotate(-90deg) translateX(50%) translateY(50%);
     transform-origin: right bottom;
-    width: auto;
-    opacity: 1;
-    color: white;
-    background-color: #ec1c24;
-    padding: 5px 8px 6px !important;
-    height: 30px !important;
-    right: 15px !important;
+    width: auto
 }
 
 @media (max-width:900px) and (orientation:landscape),
