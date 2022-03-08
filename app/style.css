@@ -22595,7 +22595,8 @@ all and (max-width:900px) and (orientation:landscape) {
         padding-bottom: 8.33333vw;
         padding-bottom: calc(var(--mobile-size)*2);
         padding-top: 33.33333vw;
-        padding-top: calc(var(--mobile-size)/2)
+        padding-top: calc(var(--mobile-size)/2);
+        background-size: cover;
     }
 }
 
@@ -22604,7 +22605,8 @@ all and (max-width:900px) and (orientation:landscape) {
         padding-bottom: 8.33333vw;
         padding-bottom: calc(var(--mobile-size)*4);
         padding-top: 66.66667vw;
-        padding-top: calc(var(--mobile-size)/2)
+        padding-top: calc(var(--mobile-size)/2);
+        background-size: cover;
     }
 }
 
