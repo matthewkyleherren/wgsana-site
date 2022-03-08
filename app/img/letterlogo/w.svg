@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="52px" viewBox="0 0 64 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo-mobile" transform="translate(0.720000, -0.128000)" fill="#FFFFFF" fill-rule="nonzero">
+            <polygon id="Path" points="56.088 0.72 62.496 0.72 45.288 52.128 39.384 52.128 31.176 28.728 23.04 52.128 17.136 52.128 0 0.72 6.336 0.72 15.192 28.224 20.232 45.144 25.776 28.224 28.008 21.6 20.376 0.72 26.208 0.72 31.248 15.336 36.216 0.72 42.12 0.72 34.344 21.6 36.792 28.152 42.48 45.144 47.376 28.152"></polygon>
+        </g>
+    </g>
+</svg>
