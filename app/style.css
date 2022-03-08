@@ -22582,8 +22582,12 @@ all and (max-width:900px) and (orientation:landscape) {
 .home__hero {
     padding-bottom: 5vw;
     padding-top: 40vw;
-    background: url(https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&h=1280&q=80);
-    background-size: cover;
+    background: url(https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080&q=80);
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+    background-position: bottom;
+    height:100vh
+    
 }
 
 @media (max-width:900px) and (orientation:landscape) {
@@ -22851,7 +22855,9 @@ all and (max-width:1024px) and (orientation:portrait) {
 
 .home__gallery .image {
     height: auto;
-    width: 100%
+    width: 100%;
+    margin-bottom: 2vw;
+    margin-top: 2vw
 }
 
 @media (max-width:900px) and (orientation:landscape),
@@ -22870,8 +22876,8 @@ all and (max-width:1024px) and (orientation:portrait) {
 }
 
 .home__gallery .image--1 {
-    margin-bottom: 7.5vw;
-    margin-top: 20vw
+    margin-bottom: 3.5vw;
+    margin-top: 3vw
 }
 
 @media (max-width:900px) and (orientation:landscape),
@@ -22884,7 +22890,8 @@ all and (max-width:1024px) and (orientation:portrait) {
 }
 
 .home__gallery .image--2 {
-    margin-bottom: 1vw
+    margin-bottom: 3.5vw;
+    margin-top: 3vw
 }
 
 @media (max-width:900px) and (orientation:landscape),
@@ -22896,6 +22903,7 @@ all and (max-width:1024px) and (orientation:portrait) {
 }
 
 .home__gallery .image--3 {
+    display: none;
     width: 25vw
 }
 
@@ -22907,9 +22915,9 @@ all and (max-width:1024px) and (orientation:portrait) {
 }
 
 .home__gallery .info--1 {
-    margin-left: 5vw;
-    margin-right: 10vw;
-    width: 25vw
+    margin-left: 0vw;
+    margin-right: 0vw;
+    width: 40vw
 }
 
 @media (max-width:1024px) and (orientation:portrait) {
@@ -22935,7 +22943,7 @@ all and (max-width:1024px) and (orientation:portrait) {
 
     .home__gallery .info--1 .title {
         left: 0;
-        position: absolute;
+        
         top: 0
     }
 }
@@ -22948,10 +22956,10 @@ all and (max-width:1024px) and (orientation:portrait) {
 }
 
 .home__gallery .info--2 {
-    margin-bottom: 10vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    width: 25vw
+    margin-bottom: 3vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    width: 40vw
 }
 
 @media (max-width:1024px) and (orientation:portrait) {
@@ -22980,7 +22988,7 @@ all and (max-width:1024px) and (orientation:portrait) {
 
     .home__gallery .info--2 .title {
         left: 0;
-        position: absolute;
+        
         top: 0
     }
 }
@@ -22993,7 +23001,8 @@ all and (max-width:1024px) and (orientation:portrait) {
 }
 
 .home__gallery .info .title {
-    margin-bottom: 2vw
+    margin-bottom: 2vw;
+    margin-top:2vw
 }
 
 
@@ -23018,6 +23027,12 @@ margin-right: 10vw;
     }
 }
 
+.home__gallery .info {
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+        
+    }
+}
 .home__poster {
     padding: 5vw 0
 }
