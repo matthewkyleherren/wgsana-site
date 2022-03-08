@@ -28697,13 +28697,13 @@ all and (max-width:1024px) and (orientation:portrait) {
 
 @media (max-width:900px) and (orientation:landscape) {
     .page__hero .mask .bg {
-        background-color: rgba(0, 0, 0, .5)
+        background-color: rgba(0, 0, 0, 0)
     }
 }
 
 @media (max-width:1024px) and (orientation:portrait) {
     .page__hero .mask .bg {
-        background-color: rgba(0, 0, 0, .5)
+        background-color: rgba(0, 0, 0, .0)
     }
 }
 
@@ -28721,6 +28721,22 @@ all and (max-width:1024px) and (orientation:portrait) {
         padding: calc(var(--mobile-size)/2) calc(var(--mobile-size));
         position: absolute;
         width: 100%
+        bottom: 0;
+        left: 4vw;
+        padding: 8.33333vw;
+        padding: calc(var(--mobile-size)/2);
+        padding-bottom: 33.33333vw;
+        padding-bottom: calc(var(--mobile-size)*2);
+        position: absolute;
+        width: 65vw;
+        background-color: #ec1c24;
+        position: absolute;
+        /* margin-left: 5vw !important; */
+        /* padding-bottom: 34px !important; */
+        /* margin-bottom: 5vw !important; */
+        padding: 15px;
+        bottom: 40px;
+       
     }
 }
 
@@ -28734,6 +28750,19 @@ all and (max-width:1024px) and (orientation:portrait) {
         padding-bottom: calc(var(--mobile-size)*2);
         position: absolute;
         width: 100%
+        bottom: 0;
+        left: 4vw;
+        padding: 8.33333vw;
+        padding: calc(var(--mobile-size)/2);
+        padding-bottom: 33.33333vw;
+        padding-bottom: calc(var(--mobile-size)*2);
+        position: absolute;
+        width: 65vw;
+        background-color: #ec1c24;
+        position: absolute;
+        padding: 15px;
+        bottom: 40px;
+        
     }
 }
 
@@ -28808,7 +28837,7 @@ all and (max-width:1024px) and (orientation:portrait) {
     .page__hero .mask .scroll {
         bottom: 8.33333vw;
         bottom: calc(var(--mobile-size)/2);
-        display: block;
+        display: none;
         height: 40px;
         right: 16.66667vw;
         right: calc(var(--mobile-size));
@@ -28820,7 +28849,7 @@ all and (max-width:1024px) and (orientation:portrait) {
     .page__hero .mask .scroll {
         bottom: 16.66667vw;
         bottom: calc(var(--mobile-size));
-        display: block;
+        display: none;
         height: 40px;
         left: 8.33333vw;
         left: calc(var(--mobile-size)/2);
